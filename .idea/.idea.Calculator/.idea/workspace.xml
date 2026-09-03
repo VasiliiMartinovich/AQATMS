@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1a606157-0a62-4edf-a0e3-92633d356ede" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/HerokuApp/Pages/DropPage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HerokuApp/Pages/DynamicControlPage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HerokuApp/Pages/MainPage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HerokuApp/Pages/NestedFramesPage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HerokuApp/Pages/UploadPage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HerokuApp/TestData/UploadFile.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HerokuApp/Tests/ActionTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HerokuApp/Tests/AlertTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HerokuApp/Tests/DownloadTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HerokuApp/Tests/DynamicControlsPageTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HerokuApp/Tests/JSTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HerokuApp/Tests/NestedFramesTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HerokuApp/Tests/UploadTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SauceDemoTests/Pages/CartPage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SauceDemoTests/Pages/CheckoutPage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SauceDemoTests/Pages/HeaderSection.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SauceDemoTests/Pages/LoginPage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SauceDemoTests/Pages/OverviewPage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SauceDemoTests/Pages/ProductPage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SauceDemoTests/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SauceDemoTests/Tests/BaseTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SauceDemoTests/Tests/CartTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SauceDemoTests/Tests/CheckoutTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SauceDemoTests/Tests/LoginTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SauceDemoTests/Tests/LogoutTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SauceDemoTests/Tests/ProductTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calculator.sln" beforeDir="false" afterPath="$PROJECT_DIR$/AQA_TMS.sln" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;VasiliiMartinovich&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/VasiliiMartinovich/AQATMS.git&quot;,
+    &quot;accountId&quot;: &quot;55be90df-ca27-48f1-ad43-59058ca20460&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/HerokuApp/Pages/DropPage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HerokuApp/Pages/DynamicControlPage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HerokuApp/Pages/MainPage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HerokuApp/Pages/NestedFramesPage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HerokuApp/Pages/UploadPage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HerokuApp/Tests/ActionTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HerokuApp/Tests/AlertTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HerokuApp/Tests/DownloadTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HerokuApp/Tests/JSTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HerokuApp/Tests/NestedFramesTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HerokuApp/Tests/UploadTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SauceDemoTests/Pages/CartPage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SauceDemoTests/Pages/CheckoutPage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SauceDemoTests/Pages/HeaderSection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SauceDemoTests/Pages/LoginPage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SauceDemoTests/Pages/OverviewPage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SauceDemoTests/Pages/ProductPage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SauceDemoTests/Tests/BaseTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SauceDemoTests/Tests/CartTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SauceDemoTests/Tests/CheckoutTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SauceDemoTests/Tests/LoginTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SauceDemoTests/Tests/LogoutTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SauceDemoTests/Tests/ProductTests.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="3IpQpeCtAdkOOxolLJbbJ1vGv8g" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1a606157-0a62-4edf-a0e3-92633d356ede" name="Changes" comment="" />
+      <created>1788459215658</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1788459215658</updated>
+      <workItem from="1788459219226" duration="2723000" />
+    </task>
+    <task id="LOCAL-00001" summary="HW_22">
+      <option name="closed" value="true" />
+      <created>1788460492983</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1788460492983</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="HW_22" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW_22" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

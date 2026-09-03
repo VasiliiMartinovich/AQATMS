@@ -1,0 +1,17 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=491d2050_002D9168_002D428e_002D86a2_002D80fa61077fa9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SimpleAssertionsTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::1F62528E-8B68-4E60-BE02-529A2128CFF3::net10.0::Calculator.Tests.SimpleAssertions.SimpleAssertionsTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::1F62528E-8B68-4E60-BE02-529A2128CFF3::net10.0::Calculator.Tests.ComplexAssertions.ComplexAssertionsTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::D46FF337-2E2C-4BB3-807B-F565FAD8A6BD::net10.0::HerokuApp.Pages.ActionsTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::D46FF337-2E2C-4BB3-807B-F565FAD8A6BD::net10.0::HerokuApp.Pages.AlertTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::D46FF337-2E2C-4BB3-807B-F565FAD8A6BD::net10.0::HerokuApp.Pages.DownloadTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::D46FF337-2E2C-4BB3-807B-F565FAD8A6BD::net10.0::HerokuApp.Tests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::D46FF337-2E2C-4BB3-807B-F565FAD8A6BD::net10.0::HerokuApp.Pages.JSTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::D46FF337-2E2C-4BB3-807B-F565FAD8A6BD::net10.0::HerokuApp.Pages.NestedFramesTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::D46FF337-2E2C-4BB3-807B-F565FAD8A6BD::net10.0::HerokuApp.Pages.UploadTests&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+    &lt;ProjectFolder&gt;39613C2D-7413-4949-BFB3-FB56ADB046B6/d:Tests&lt;/ProjectFolder&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
