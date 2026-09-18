@@ -1,9 +1,11 @@
 ﻿using Calculator.Hooks;
+using Allure.NUnit;
 
 namespace Calculator.Tests.SimpleAssertions;
 
 [TestFixture]
 [Parallelizable(ParallelScope.Children)]
+[AllureNUnit]
 public class SimpleAssertionsTests : BaseTest
 {
     [Test]

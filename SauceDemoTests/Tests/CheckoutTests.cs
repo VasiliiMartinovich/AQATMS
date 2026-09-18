@@ -1,8 +1,11 @@
-﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
+﻿using Allure.Net.Commons;
+using Allure.Net.Commons.Attributes;
+using Allure.NUnit;
 using SauceDemoTests.Pages;
 
 namespace SauceDemoTests.Tests;
+
+[AllureNUnit]
 
 public class CheckoutTests : BaseTests
 {
@@ -16,12 +19,17 @@ public class CheckoutTests : BaseTests
         cartPage.Checkout();
     }
     [Test]
+    [AllureName("Checkout page displays ")]
     public void CheckoutPageDisplayed()
     {
         CheckoutPage checkoutPage = new CheckoutPage(driver);
         Assert.That(checkoutPage.IsCheckoutPageDisplayed(), Is.True);
     }
     [Test]
+    [AllureName("Purchase flow")]
+    [AllureTag("regression")]
+    [AllureSeverity(SeverityLevel.critical)]
+    [AllureDescription("Product buy flow")]
     public void FullPurchaseFlow()
     {
         CheckoutPage checkoutPage = new CheckoutPage(driver);

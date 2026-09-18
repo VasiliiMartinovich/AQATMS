@@ -1,4 +1,7 @@
-﻿using Calculator.Hooks;
+﻿using Allure.Net.Commons;
+using Allure.Net.Commons.Attributes;
+using Allure.NUnit;
+using Calculator.Hooks;
 using Calculator.TestData;
 using NUnit.Framework.Legacy;
 
@@ -6,9 +9,13 @@ namespace Calculator.Tests.ComplexAssertions;
 
 [TestFixture]
 [Parallelizable(ParallelScope.Children)]
+[AllureNUnit]
 public class ComplexAssertionsTests : BaseTest
 {
     [Test]
+    [AllureName("ContainsText")]
+    [AllureTag("smoke")]
+    [AllureSeverity(SeverityLevel.normal)]
     public void GetResultAsStringShouldContainText()
     {
         var result = Calculator.GetResultAsString(5, 8);
