@@ -2,7 +2,6 @@
 using Allure.Net.Commons.Attributes;
 using Allure.NUnit;
 using log4net;
-using NUnit.Framework.Internal;
 using SauceDemoTests.Pages;
 
 namespace SauceDemoTests.Tests;

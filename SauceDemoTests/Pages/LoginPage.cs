@@ -1,5 +1,7 @@
 ﻿using log4net;
 using OpenQA.Selenium;
+using SauceDemoTests.Elements;
+
 
 namespace SauceDemoTests.Pages;
 
@@ -7,34 +9,37 @@ public class LoginPage : BasePage
 {
     private readonly ILog logger = LogManager.GetLogger(typeof(LoginPage));
 
-    private readonly By _userNameField = By.Id("user-name");
-    private readonly By _passwordField = By.CssSelector("input[data-test='password']");
-    private readonly By _loginButton = By.Id("login-button");
-    private readonly By _errorMessage = By.CssSelector("h3[data-test='error']");
-
+    private readonly TextField _userNameField;
+    private readonly TextField _passwordField;
+    private readonly Button _loginButton;
+    private readonly BaseElement _errorMessage;
+    
     public LoginPage(IWebDriver driver) : base(driver)
     {
-        _driver = driver;
+        _userNameField = new TextField(driver, By.Id("user-name"));
+        _passwordField = new TextField(driver, By.CssSelector("input[data-test='password']"));
+        _loginButton = new Button(driver, By.Id("login-button"));
+        _errorMessage = new BaseElement(driver, By.CssSelector("h3[data-test='error']"));
     }
 
     public LoginPage SetUserName(string username)
     {
         logger.Info("Entering username");
-        _driver.FindElement(_userNameField).SendKeys(username);
+        _userNameField.SetValue(username);
         return this;
     }
 
     public LoginPage SetPassword(string password)
     {
         logger.Info("Entering password");
-        _driver.FindElement(_passwordField).SendKeys(password);
+        _passwordField.SetValue(password);
         return this;
     }
 
     public ProductPage ClickLoginButton()
     {
         logger.Info("Clicking Login button");
-        _driver.FindElement(_loginButton).Click();
+        _loginButton.Click();
         return new ProductPage(_driver);
     }
 
@@ -46,17 +51,17 @@ public class LoginPage : BasePage
     public string? GetErrorMessage()
     {
         logger.Info("Getting login error message");
-        string errorMessage = _driver.FindElement(_errorMessage)?.Text;
+        string errorMessage = _errorMessage.GetText();
         logger.Info($"Login error message: {errorMessage}");
-        return _driver.FindElement(_errorMessage)?.Text;
+        return errorMessage;
     }
 
     public bool IsLoginPageDisplayed()
     {
         logger.Info("Checking that Login page is displayed");
-        bool isDisplayed = _driver.FindElement(_loginButton).Displayed
-                           && _driver.FindElement(_userNameField).Displayed
-                           && _driver.FindElement(_passwordField).Displayed;
+        bool isDisplayed = _loginButton.IsDisplayed()
+                           && _userNameField.IsDisplayed()
+                           && _passwordField.IsDisplayed();
         logger.Info($"Login page displayed: {isDisplayed}");
         return isDisplayed;
     }

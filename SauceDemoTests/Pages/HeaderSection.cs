@@ -1,28 +1,29 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
+using SauceDemoTests.Elements;
 
 namespace SauceDemoTests.Pages;
 
 public class HeaderSection : BasePage
 {
-    private readonly By _btnBurgerMenu = By.Id("react-burger-menu-btn");
-    private readonly By _btnLogout = By.Id("logout_sidebar_link");
+    private readonly Button _burgerMenu;
+    private readonly Link _logoutButton;
     public HeaderSection(IWebDriver driver) : base(driver)
     {
+        _burgerMenu = new Button(driver, By.Id("react-burger-menu-btn"));
+        _logoutButton = new Link(driver, By.Id("logout_sidebar_link"));
     }
 
     public HeaderSection OpenSideBar()
     {
-        _driver.FindElement(_btnBurgerMenu).Click();
-        WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10)); //ожидание 10 секунд, пока кнопка логаут не станет Displayed. 
-        wait.Until(e => e.FindElement(_btnLogout).Displayed);
-
+        _burgerMenu.Click();
+        _logoutButton.WaitUntilDisplayed();
         return this;
     }
 
     public LoginPage ClickLogoutButton()
     {
-        _driver.FindElement(_btnLogout).Click();
+        _logoutButton.Click();
         return new LoginPage(_driver);
     }
     public LoginPage Logout()

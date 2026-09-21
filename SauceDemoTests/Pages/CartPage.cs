@@ -1,72 +1,71 @@
-﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
+﻿using log4net;
+using OpenQA.Selenium;
+using SauceDemoTests.Elements;
+
 namespace SauceDemoTests.Pages;
 
 public class CartPage : BasePage
 {
+    private readonly ILog logger = LogManager.GetLogger(typeof(LoginPage));
+    private readonly Button _checkoutButton;
+    private readonly Button _continueShoppingButton;
+    private readonly Button _removeProduct;
+    private readonly BaseElement _cartQuantity;
+    private readonly By _cartProducts = By.CssSelector("[data-test='inventory-item']");
+    private readonly By _removeButtons = By.XPath("//button[contains(text(), 'Remove')]");
     public CartPage(IWebDriver driver) : base(driver)
     {
+        _checkoutButton = new Button(driver, By.Id("checkout"));
+        _continueShoppingButton = new Button(driver, By.Id("continue-shopping"));
+        _removeProduct = new Button(driver, By.XPath("(//button[contains(@class, 'cart_button')])[1]"));
+        _cartQuantity = new BaseElement(driver, By.CssSelector("[data-test='item-quantity']"));
     }
-    private readonly By _checkoutButton = By.Id("checkout");
-    private readonly By _continueShoppingButton = By.Id("continue-shopping");
-    private readonly By _removeProduct = By.XPath("(//button[contains(@class, 'cart_button')])[1]");
-    private readonly By _cartQty = By.CssSelector("[data-test='item-quantity']");
-
+   
     public CheckoutPage Checkout()
     {
-        _driver.FindElement(_checkoutButton).Click();
+        _checkoutButton.Click();
         return new CheckoutPage(_driver);
     }
     
     public bool IsCheckoutDisplayed()
     {
-        return _driver.FindElement(_checkoutButton).Displayed;
+        return _checkoutButton.IsDisplayed();
     }
 
     public ProductPage ContinueShopping()
     {
-        _driver.FindElement(_continueShoppingButton).Click();
+       _continueShoppingButton.Click();
         return new ProductPage(_driver);   
     }
 
     public CartPage RemoveProduct()
     {
-        _driver.FindElement(_removeProduct).Click();
+        _removeProduct.Click();
         return this;
     }
     
     public bool IsProductDisplayed()
     {
-        return _driver.FindElement(_cartQty)?.Displayed ?? false;
+        return _cartQuantity.IsDisplayed();
     } 
     
     public int GetRemoveButtonsCount()
     {
-        return _driver.FindElements(By.XPath("//button[contains(text(), 'Remove')]")).Count;
+        return _driver.FindElements(_removeButtons).Count;
     }
 
     public bool ProductsHaveRequiredElements()
     {
-        var cartProducts = _driver.FindElements(
-            By.CssSelector("[data-test='inventory-item']"));
-
-        foreach (var product in cartProducts)
+        logger.Info("Checking if products contain all elements in the cart");
+        var cartProducts = _driver.FindElements(_cartProducts);
+        foreach (var cartProductElement in cartProducts)
         {
-            if (!product.FindElement(By.ClassName("cart_quantity")).Displayed)
+            var cartItem = new CartItem(cartProductElement);
+            if (!cartItem.HasRequiredElements())
+            {
                 return false;
-            if (!product.FindElement(By.ClassName("cart_item_label")).Displayed)
-                return false;
-
-            if (!product.FindElement(By.ClassName("inventory_item_desc")).Displayed)
-                return false;
-
-            if (!product.FindElement(By.ClassName("item_pricebar")).Displayed)
-                return false;
-
-            if (!product.FindElement(By.CssSelector(".btn.btn_secondary.btn_small")).Displayed)
-                return false;
+            }
         }
-
         return true;
     }
 }

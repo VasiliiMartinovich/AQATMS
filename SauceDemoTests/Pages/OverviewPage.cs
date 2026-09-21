@@ -1,30 +1,34 @@
-﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
+﻿using log4net;
+using OpenQA.Selenium;
+using SauceDemoTests.Elements;
 
 namespace SauceDemoTests.Pages;
 
 public class OverviewPage : BasePage
 {
+    private readonly ILog logger = LogManager.GetLogger(typeof(LoginPage));
+    private readonly Button _btnFinish;
+    private readonly Label _txtSuccess;
     public OverviewPage(IWebDriver driver) : base(driver)
     {
+        _btnFinish = new Button(driver, By.Id("finish"));
+        _txtSuccess = new Label(driver, By.XPath("//h2[text()='Thank you for your order!']"));
     }
-
-    private readonly By _btnFinish = By.Id("finish");
-    private readonly By _txtSuccess = By.XPath("//h2[text()='Thank you for your order!']");
 
     public bool IsFinishButtonDisplayed()
     {
-        return _driver.FindElement(_btnFinish).Displayed;
+        logger.Info("Checking if Overview page displays");
+        return _btnFinish.IsDisplayed();
     }
     
     public void ClickFinishButton()
     {
-        _driver.FindElement(_btnFinish).Click();
+        _btnFinish.Click();
     }
     
     public bool IsSuccessMessageDisplayed()
     {
-        return _driver.FindElements(_txtSuccess)
-            .Count == 1;
+        logger.Info("Checking if order is completed");
+        return _txtSuccess.IsDisplayed();
     }
 }
