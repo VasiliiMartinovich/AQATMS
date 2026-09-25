@@ -3,14 +3,16 @@ using log4net;
 using log4net.Config;
 using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
+using SauceDemoTests.Helpers;
+using SauceDemoTests.Models;
 using SauceDemoTests.Pages;
 
 namespace SauceDemoTests.Tests;
 
 public class BaseTests
 {
-    protected IWebDriver driver = null;
+    protected IWebDriver driver = null!;
+    protected TestSettings settings = null!;
     private ILog logger = LogManager.GetLogger(typeof(BaseTests));
     
     public BaseTests()
@@ -24,10 +26,9 @@ public class BaseTests
     {
         Console.WriteLine("BaseSetup");
         logger.Info("Test setup started");
-        ChromeOptions options = new ChromeOptions();
-        options.AddArgument("--guest"); 
-        driver = new ChromeDriver(options);
-        logger.Info("Chrome browser started");
+        settings = ConfigurationReader.GetSettings();
+        driver = WebDriverFactory.Create(settings.Browser);
+        logger.Info("Browser started");
         driver.Manage().Window.Maximize();
         logger.Info("maximizing Chrome Window");
         AllureApi.Step("Open Sauce Demo.", () =>

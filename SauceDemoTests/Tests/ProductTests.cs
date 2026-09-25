@@ -16,7 +16,7 @@ public class ProductTests : BaseTests
         ProductPage productPage = loginPage.Login();
     }
 
-    [Test]
+   [Test]
     [AllureName("Product's elements checkout")]
     [AllureTag("regression")]
     [AllureSeverity(SeverityLevel.minor)]
@@ -26,6 +26,7 @@ public class ProductTests : BaseTests
     AllureApi.Step("Product's elements checkout.", () =>
     {
         ProductPage productPage = new ProductPage(driver);
+        Assert.That(productPage.IsLoaded(), Is.True);
         Assert.That(productPage.ProductsHaveRequiredElements(), Is.True);
     });
 }

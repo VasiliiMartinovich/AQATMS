@@ -13,6 +13,17 @@ public class LoginTest : BaseTests
     private readonly ILog logger = LogManager.GetLogger(typeof(LoginTest));
     
     [Test]
+    [AllureName("LoginPageLoading")]
+    [AllureTag("regression")]
+    [AllureSeverity(SeverityLevel.minor)]
+    public void LoginPageShouldBeLoaded()
+    {
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.Open();
+        Assert.That(loginPage.IsLoaded(), Is.True);
+    }
+    
+    [Test]
     [AllureName("Successful login")]
     [AllureTag("regression")]
     [AllureSeverity(SeverityLevel.blocker)]
@@ -21,6 +32,8 @@ public class LoginTest : BaseTests
     {
         logger.Info("Test started: LoginSuccess");
         LoginPage loginPage = new LoginPage(driver);
+        loginPage.Open();
+        Assert.That(loginPage.IsLoaded(), Is.True);
         AllureApi.Step("Successful login.", () =>
         {
             ProductPage productPage = loginPage.Login();
@@ -42,7 +55,7 @@ public class LoginTest : BaseTests
 
         AllureApi.Step("Login with locked user.", () =>
         {
-            loginPage.Login(username: "locked_out_user");
+            loginPage.SetUserName(username: "locked_out_user").SetPassword(password: "secret_sauce").ClickLoginButton();
             logger.Info("Checking locked user error message");
             Assert.That(loginPage.GetErrorMessage(), Is.EqualTo("Epic sadface: Sorry, this user has been locked out."));
         });

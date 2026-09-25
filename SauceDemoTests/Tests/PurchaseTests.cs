@@ -25,6 +25,7 @@ public class PurchaseTests : BaseTests
         {
             LoginPage loginPage = new LoginPage(driver);
             productPage = loginPage.Login();
+            Assert.That(productPage.IsLoaded(), Is.True);
             Assert.That(productPage.IsCartIconDisplayed(), Is.True);
         });
 
@@ -36,6 +37,7 @@ public class PurchaseTests : BaseTests
         AllureApi.Step("Open shopping cart.", () =>
         {
             cartPage = productPage.OpenCart();
+            Assert.That(cartPage.IsLoaded(), Is.True);
         });
 
         AllureApi.Step("Verify product is added to cart", () =>
@@ -47,6 +49,7 @@ public class PurchaseTests : BaseTests
         AllureApi.Step("Proceed to checkout", () =>
         {
             checkoutPage = cartPage.Checkout();
+            Assert.That(checkoutPage.IsLoaded(), Is.True);
         });
 
         AllureApi.Step("Verify checkout page", () =>
@@ -56,12 +59,13 @@ public class PurchaseTests : BaseTests
 
         AllureApi.Step("Enter customer information", () =>
         {
-            checkoutPage.SetCustomerInformation("John", "Ivanov", "92012");
+            checkoutPage.SetFirstName("John").SetLastName("Ivanov").SetZipcode("92012");
         });
         
         AllureApi.Step("Check overview", () =>
         {
             overviewPage = checkoutPage.ClickContinueButton();
+            Assert.That(overviewPage.IsLoaded(), Is.True);
             Assert.That(overviewPage.IsFinishButtonDisplayed(), Is.True);
         });
 

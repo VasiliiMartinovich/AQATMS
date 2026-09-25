@@ -1,5 +1,5 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=491d2050_002D9168_002D428e_002D86a2_002D80fa61077fa9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SimpleAssertionsTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=491d2050_002D9168_002D428e_002D86a2_002D80fa61077fa9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SimpleAssertionsTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Or&gt;&#xD;
     &lt;TestAncestor&gt;&#xD;
       &lt;TestId&gt;NUnit3x::1F62528E-8B68-4E60-BE02-529A2128CFF3::net10.0::Calculator.Tests.SimpleAssertions.SimpleAssertionsTests&lt;/TestId&gt;&#xD;
@@ -14,4 +14,22 @@
     &lt;/TestAncestor&gt;&#xD;
     &lt;ProjectFolder&gt;39613C2D-7413-4949-BFB3-FB56ADB046B6/d:Tests&lt;/ProjectFolder&gt;&#xD;
   &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4d06112c_002D3af5_002D45f2_002D84c8_002D830c7eea511d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="LoginLockedUser" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::39613C2D-7413-4949-BFB3-FB56ADB046B6::net10.0::SauceDemoTests.Tests.LoginTest.LoginLockedUser&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::39613C2D-7413-4949-BFB3-FB56ADB046B6::net10.0::SauceDemoTests.Tests.LoginTest.LoginPageShouldBeLoaded&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::39613C2D-7413-4949-BFB3-FB56ADB046B6::net10.0::SauceDemoTests.Tests.LoginTest.LoginSuccess&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::39613C2D-7413-4949-BFB3-FB56ADB046B6::net10.0::SauceDemoTests.Tests.ProductTests.ProductPageShouldBeLoadedAfterLogin&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::39613C2D-7413-4949-BFB3-FB56ADB046B6::net10.0::SauceDemoTests.Tests.ProductTests.AllProductsHaveRequiredElements&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::39613C2D-7413-4949-BFB3-FB56ADB046B6::net10.0::SauceDemoTests.Tests.CartTests.AddProductToCart&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::39613C2D-7413-4949-BFB3-FB56ADB046B6::net10.0::SauceDemoTests.Tests.CheckoutTests.CheckoutPageDisplayed&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::39613C2D-7413-4949-BFB3-FB56ADB046B6::net10.0::SauceDemoTests.Tests.PurchaseTests.FullPurchaseFlow&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::39613C2D-7413-4949-BFB3-FB56ADB046B6::net10.0::SauceDemoTests.Tests.LoginTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::39613C2D-7413-4949-BFB3-FB56ADB046B6::net10.0::SauceDemoTests.Tests.CartTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::39613C2D-7413-4949-BFB3-FB56ADB046B6::net10.0::SauceDemoTests.Tests.CheckoutTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::39613C2D-7413-4949-BFB3-FB56ADB046B6::net10.0::SauceDemoTests.Tests.LogoutTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::39613C2D-7413-4949-BFB3-FB56ADB046B6::net10.0::SauceDemoTests.Tests.ProductTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::39613C2D-7413-4949-BFB3-FB56ADB046B6::net10.0::SauceDemoTests.Tests.PurchaseTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

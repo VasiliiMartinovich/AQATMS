@@ -28,6 +28,7 @@ public class CartTests : BaseTests
             ProductPage productPage = new ProductPage(driver);
             productPage.AddToCart();
             CartPage cartPage = productPage.OpenCart();
+            Assert.That(cartPage.IsLoaded(), Is.True);
             Assert.That(cartPage.IsProductDisplayed(), Is.True);
         });
     }
@@ -77,7 +78,7 @@ public class CartTests : BaseTests
     {
         ProductPage productPage = new ProductPage(driver);
         CartPage cartPage = productPage.OpenCart();
-        Assert.That(cartPage.IsCheckoutDisplayed(), Is.True);
+        Assert.That(cartPage.IsLoaded(), Is.True);
     }
     
     [Test]

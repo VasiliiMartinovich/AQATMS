@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 namespace SauceDemoTests.Pages;
 
-public class BasePage
+public  class BasePage
 {
     protected IWebDriver _driver;
     
@@ -16,7 +16,7 @@ public class BasePage
         _driver.Manage().Window.Maximize();
     }
     
-    public string GetUrl()
+ public string GetUrl()
     {
         return _driver.Url;
     }

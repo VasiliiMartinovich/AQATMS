@@ -22,6 +22,7 @@ public class CheckoutTests : BaseTests
     public void CheckoutPageDisplayed()
     {
         CheckoutPage checkoutPage = new CheckoutPage(driver);
+        Assert.That(checkoutPage.IsLoaded(), Is.True);
         Assert.That(checkoutPage.IsCheckoutPageDisplayed(), Is.True);
     }
 }
