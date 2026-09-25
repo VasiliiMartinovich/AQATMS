@@ -42,7 +42,6 @@ public class BaseTests
     public void TearDown()
     {
         Console.WriteLine("BaseTeardown");
-
         try
         {
             var status = TestContext.CurrentContext.Result.Outcome.Status;

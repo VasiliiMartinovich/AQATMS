@@ -13,5 +13,4 @@ public abstract class LoadablePage : BasePage
     }
 
     public abstract bool IsLoaded();
-    
 }

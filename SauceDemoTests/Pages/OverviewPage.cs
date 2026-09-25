@@ -17,7 +17,6 @@ public class OverviewPage : LoadablePage
     [FindsBy(How = How.XPath, Using = "//h2[text()='Thank you for your order!']")]
     private IWebElement _txtSuccess;
     
-    
     public OverviewPage(IWebDriver driver) : base(driver)
     {
         // _btnFinish = new Button(driver, By.Id("finish"));
@@ -25,8 +24,7 @@ public class OverviewPage : LoadablePage
         PageFactory.InitElements(driver, this);
     }
 
-  
-    public override bool IsLoaded()
+  public override bool IsLoaded()
     {
         logger.Info("Checking that Overview page is loaded");
         WebDriverWait Wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10));
