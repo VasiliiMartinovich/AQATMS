@@ -20,12 +20,18 @@ public static class WebDriverFactory
     }
 
     private static IWebDriver CreateChrome()
-        {
-            var options = new ChromeOptions();
-            options.AddArgument("--guest");
-            options.AddArgument("--start-maximized");
-            return new ChromeDriver(options);
-        }
+    {
+        var options = new ChromeOptions();
+
+        options.AddArgument("--headless=new");
+        options.AddArgument("--no-sandbox");
+        options.AddArgument("--disable-dev-shm-usage");
+        options.AddArgument("--disable-gpu");
+
+        options.AddArgument("--guest");
+
+        return new ChromeDriver(options);
+    }
         
         private static IWebDriver CreateFirefox()
         {
