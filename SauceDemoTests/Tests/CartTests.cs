@@ -14,6 +14,8 @@ public class CartTests : BaseTests
     {
         LoginPage loginPage = new LoginPage(driver);
         ProductPage productPage = loginPage.Login();
+
+        Assert.That(productPage.IsLoaded(), Is.True);
     }
     
     [Test]
@@ -26,6 +28,7 @@ public class CartTests : BaseTests
         AllureApi.Step("Adding an item to the cart", () =>
         {
             ProductPage productPage = new ProductPage(driver);
+            Assert.That(productPage.IsLoaded(), Is.True);
             productPage.AddToCart();
             CartPage cartPage = productPage.OpenCart();
             Assert.That(cartPage.IsLoaded(), Is.True);
