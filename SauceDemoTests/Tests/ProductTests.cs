@@ -39,10 +39,11 @@ public class ProductTests : BaseTests
     {
         ProductPage productPage = new ProductPage(driver);
         CartPage cartPage = productPage.OpenCart();
+
         AllureApi.Step("Product's elements checkout.", () =>
         {
-            cartPage.ContinueShopping();
-            Assert.That(productPage.IsTitleDisplayed(), Is.True);
+            ProductPage returnedProductPage = cartPage.ContinueShopping();
+            Assert.That(returnedProductPage.IsTitleDisplayed(), Is.True);
         });
     }
 
