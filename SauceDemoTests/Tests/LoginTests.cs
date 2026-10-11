@@ -37,6 +37,7 @@ public class LoginTest : BaseTests
         AllureApi.Step("Successful login.", () =>
         {
             ProductPage productPage = loginPage.Login();
+            Assert.That(productPage.IsLoaded(), Is.True);
             logger.Info("Checking that cart icon is displayed");
             Assert.That(productPage.IsCartIconDisplayed(), Is.True);
         });

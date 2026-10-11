@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HerokuApp", "HerokuApp\Hero
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SauceDemoTests", "SauceDemoTests\SauceDemoTests.csproj", "{39613C2D-7413-4949-BFB3-FB56ADB046B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booking", "Booking\Booking.csproj", "{2ACA2420-4571-447F-85DA-3B738EB3CAE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReqResApiTests", "ReqResApiTests\ReqResApiTests.csproj", "{2E0D5A1B-F4CA-48A1-A2A5-FA45AD767CB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{39613C2D-7413-4949-BFB3-FB56ADB046B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39613C2D-7413-4949-BFB3-FB56ADB046B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39613C2D-7413-4949-BFB3-FB56ADB046B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ACA2420-4571-447F-85DA-3B738EB3CAE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ACA2420-4571-447F-85DA-3B738EB3CAE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ACA2420-4571-447F-85DA-3B738EB3CAE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ACA2420-4571-447F-85DA-3B738EB3CAE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E0D5A1B-F4CA-48A1-A2A5-FA45AD767CB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E0D5A1B-F4CA-48A1-A2A5-FA45AD767CB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E0D5A1B-F4CA-48A1-A2A5-FA45AD767CB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E0D5A1B-F4CA-48A1-A2A5-FA45AD767CB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
